@@ -10,16 +10,23 @@
     <link rel="stylesheet" href="css_style/custom.css">
     <!-- bootstrap.min.css -->
     <link rel="stylesheet" href="css_style/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/arafkarim/BootstrapPlusPlus/a32c1a63/dist/dark/css/bootstrap.min.css">
 	<!-- font-awesome -->
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     
     <!-- AOS -->
     <!-- <link rel="stylesheet" href="css style/aos.css"> -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
     <!-- banner -->
+    <div class="preloaderWrapper">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
     <div class="jumbotron jumbotron-fluid" id="banner" style="background-image: url(img/banner-bg1.jpg);">
       <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
         <div class="container text-center text-md-left">
@@ -42,32 +49,66 @@
             	at one place
             </h1>
             <p  class="lead text-white font-weight-bold my-4" data-aos="fade-left">
-                IRASCO in Ratlam Kasara Bazar, Ratlam is known to satisfactorily cater to the demands of its customer base. The business came into existence in 2017 and has, 
-                since then, been a known name in its field.<br> It stands located at Bohra Baakhal, Kasara Bazar-457001.The business strives to make 
-                <br>for a positive experience through its offerings.
+              We maintaining tradition of offering high quality ducting products as a world class manufacturer and supplier of ducts and accessories.
+              <br>We work with our customers  not just as a service provider but also as full partner to achieve best solution for them. Being a complete
+              ducting various prestigious duct work projects of many companies.
             </p>
             <a href="#" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="btn my-4 font-weight-bold atlas-cta cta-green">Get Started</a>
         </div>
     </div>
     <!-- three-blcok -->
-    <div class="container my-5 py-2">
+    <div class="container my-5 py-2" id="products">
         <h2 class="text-center font-weight-bold my-4">Smartest choice for your home or work place</h2>
         <div class="row">
-            <div class="col-md-4 text-center" data-aos="fade-left">
-                <img src="img/sticker.webp" alt="Air cooling" class="mx-auto">
-                <h4>Air cooling</h4>
-                <p>We provide central air conditioning with very affordable prices</p>
+            <div class="col-lg-6 text-center" data-aos="fade-left" style="padding-right: 60px;">
+                <a href="product_webpages/aircooling.html"><img src="img/sticker.png" alt="Air cooling" class="mx-auto" ></a>
+                <a href="product_webpages/aircooling.html"><h4 style="padding-top: 25px;"> Air cooling</h4></a>
+                <p>We provide central air cooling with very affordable prices</p>
             </div>
-            <div class="col-md-4 text-center" data-aos="fade-up">
-                <img src="img/chimney.jpg" alt="commercial chimneys" class="mx-auto" >
-                <h4>Commercial Chimneys</h4>
+            <div class="col-lg-6 text-center" data-aos="fade-up">
+              <a href="product_webpages/commercial_chimney.html"><img src="img/chimney.png" alt="commercial chimneys" class="mx-auto" ></a>
+              <a href="product_webpages/commercial_chimney.html"><h4>Commercial Chimneys</h4></a>
                 <p>We provide Commercial kitchen chimneys with low noise and good durability</p>
             </div>
-            <div class="col-md-4 text-center" data-aos="fade-right">
+            <div class="col-lg-6 text-center" data-aos="fade-left" style="padding-right: 60px; padding-top: 100px;">
+              <a href="product_webpages/airconditioning.html"><img src="img/ac.png" alt="Air cooling" class="mx-auto"></a>
+              <a href="product_webpages/airconditioning.html"><h4 style="padding-top: 80px;">Air Conditioning</h4></a>
+              <p>We provide central air conditioning with very affordable prices</p>
+          </div>
+          <div class="col-lg-6 text-center" data-aos="fade-up">
+              <a href="product_webpages/aircooling.html"><img src="img/hvls.png" alt="HVLS Fans" class="mx-auto" style="width: 400px; height: 300px;"></a>
+              <a href="product_webpages/aircooling.html"><h4>ECOAIR HVLS Fans</h4></a>
+              <p>We provide HVLS fans with high performance that can replace many small fans</p>
+          </div>
+          <div class="col-lg-2 text-center" data-aos="fade-left" style="padding-right: 60px;">
+            <img src="img/pff.png" alt="poultry fan" class="mx-auto" style="width: 200px; height: 150px;">
+            <h4>Poultry Farm Fans</h4>
+        </div>
+        <div class="col-lg-2 text-center" data-aos="fade-up">
+            <img src="img/axial.png" alt="Axial fans" class="mx-auto" >
+            <h4>Axial Fans</h4>
+        </div>
+        <div class="col-lg-2 text-center" data-aos="fade-up">
+          <img src="img/belt.png" alt="belt drive" class="mx-auto" >
+          <h4>Belt Drive</h4>
+        </div>
+        <div class="col-lg-2 text-center" data-aos="fade-up" id="dd">
+          <img src="img/direct drive.png" alt="direct drive" class="mx-auto">
+          <h4>Direct Drive</h4>
+        </div>
+        <div class="col-lg-2 text-center" data-aos="fade-up" id="rb">
+          <img src="img/ring blower.png" alt="ring blower" class="mx-auto" >
+          <h4>Ring Blower</h4>
+        </div>
+        <div class="col-lg-2 text-center" data-aos="fade-up">
+          <img src="img/mancooler.png" alt="man cooler" class="mx-auto" >
+          <h4>Man Cooler</h4>
+        </div>
+            <!-- <div class="col-md-4 text-center" data-aos="fade-right">
                 <img src="img/fire1.png" alt="fire fighting" class="mx-auto" >
                 <h4>Fire Fighting works</h4>
                 <p>We provide emmense fire fighting tools .</p>
-            </div>
+            </div> -->
         </div>
     </div>
     <!-- feature (skew background) -->
@@ -154,8 +195,9 @@
             </div>
         </div>
     </div> -->
+
     <!-- testimonials -->
-    <div>
+    <!-- <div>
         <div class="row d-flex justify-content-center">
           <div class="col-md-10 col-xl-8 text-center">
             <h2 class="mb-4">Testimonials</h2>
@@ -253,10 +295,110 @@
             </ul>
           </div>
         </div>
+    </div> -->
+    <h2 style="text-align: center;">TESTIMONIALS</h2>
+    <div class="bg-dark p-5 mx-auto mt-3 mb-3" style="max-width:900px; height: 500px;">
+      <div id="carouselTestimonial" class="carousel carousel-testimonial slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselTestimonial" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselTestimonial" data-slide-to="1"></li>
+        <li data-target="#carouselTestimonial" data-slide-to="2"></li>
+        <li data-target="#carouselTestimonial" data-slide-to="3"></li>
+        <li data-target="#carouselTestimonial" data-slide-to="4"></li>
+        <li data-target="#carouselTestimonial" data-slide-to="5"></li>
+        <li data-target="#carouselTestimonial" data-slide-to="6"></li>
+        <li data-target="#carouselTestimonial" data-slide-to="7"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item text-center active">
+        <div class="carousel-testimonial-img p-1 border rounded-circle m-auto">
+          <img class="d-block w-100 rounded-circle" src="img/tstml-1.png" alt="First slide">
+        </div>
+        <h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">HUSSAIN wajdawala</strong></h5>
+        <h6 class="text-black m-0">Web Developer</h6>
+        <p class="m-0 pt-3">i wanted a ductable cooler for my office and their product and service was so well that i 
+          am fully satisfied and suggested them to all my friends and relatives. </p>
+        </div>
+        <div class="carousel-item text-center">
+        <div class="carousel-testimonial-img p-1 border rounded-circle m-auto">
+          <img class="d-block w-100 rounded-circle" src="https://profile.justdial.com/profileImg?i=IVAtNzIKtUzY6ayhs%2FWkww8GS0Q0UkmcidmskmfRE%2BA%3D" alt="Second slide">
+        </div>
+        <h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">SAKINA KALABHAI</strong></h5>
+        <h6 class="text-black m-0">AC Customer</h6>
+        <p class="m-0 pt-3">Excellent service. earlier we had called other persons for 
+          servicing but no one had done this work like he did - neatly and perfectly.</p>
+        </div>
+        <div class="carousel-item text-center">
+        <div class="carousel-testimonial-img p-1 border rounded-circle m-auto">
+          <img class="d-block w-100 rounded-circle" src="https://profile.justdial.com/profileImg?i=vy1KsLxnVmv977PpPirrrn0w4Uu1cEkDL47Hh8rW3CM%3D" alt="Third slide">
+        </div>
+        <h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">KUTBI BOOTWALA</strong></h5>
+        <h6 class="text-black m-0">Turbine Customer</h6>
+        <p class="m-0 pt-3">I need turbine ventilator for my new house in ratlam,
+          i contact irasco n they provide very good service. the owner himself is very positive n hard working.
+           I recommend Irasco.</p>
+        </div>
+        <div class="carousel-item text-center">
+          <div class="carousel-testimonial-img p-1 border rounded-circle m-auto">
+            <img class="d-block w-100 rounded-circle" src="https://lh3.googleusercontent.com/a-/AD_cMMTW_3CFQFgzDrZvO2oZaJZzv124Me-v1eoYqgCvABvAL2M=w45-h45-p-rp-mo-ba5-br100" alt="fourth slide" alt="Testimonial slide">
+          </div>
+          <h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Abbas Dhinojwala</strong></h5>
+          <h6 class="text-black m-0">Local Guide</h6>
+          <p class="m-0 pt-3">They made the ducting for our restaurant in Indore. Really good work with precision and timely follow up.
+            The owner himself visits the site and discussed what we were expecting and gave us ideas as well.
+             Recommended for people in Indore and nearby cities. </p>
+        </div>
+        <div class="carousel-item text-center">
+          <div class="carousel-testimonial-img p-1 border rounded-circle m-auto">
+            <img class="d-block w-100 rounded-circle" src="https://lh3.googleusercontent.com/a-/AD_cMMTA7sl_hJ9of8ZKCkmusXv8cwSXOIc9Vx6Z37Rsw9H1ab4=w45-h45-p-rp-mo-br100">
+          </div>
+          <h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Subham Solanki</strong></h5>
+          <h6 class="text-black m-0">HVAC</h6>
+          <p class="m-0 pt-3">A very good team for HVAC and Ducting solutions.
+            Always on time and updated work</p>
+        </div>
+        <div class="carousel-item text-center">
+          <div class="carousel-testimonial-img p-1 border rounded-circle m-auto">
+            <img class="d-block w-100 rounded-circle" src="https://lh3.googleusercontent.com/a/AAcHTtfZ4eiu0TSDrrE7CXieVnsUiCucJ3UYdx_Q9tqQLsNx=w45-h45-p-rp-mo-br100">
+          </div>
+          <h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Taher Kagdi</strong></h5>
+          <h6 class="text-black m-0"></h6>
+          <p class="m-0 pt-3">Fantastic service with super duper quality specially they are no. 1 service provider In Mp,
+             also they have a great customer querry resolution quickly as soon as possible</p>
+        </div>
+        <div class="carousel-item text-center">
+          <div class="carousel-testimonial-img p-1 border rounded-circle m-auto">
+            <img class="d-block w-100 rounded-circle" src="https://lh3.googleusercontent.com/a-/AD_cMMS3nUXpIaTG6eets2_XchWYdgz2FY4dj-OgQD60JSkH7Qs=w45-h45-p-rp-mo-ba4-br100" alt="Testimonial slide">
+          </div>
+          <h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Avinash Tripathi</strong></h5>
+          <h6 class="text-black m-0">Testimonial Position</h6>
+          <p class="m-0 pt-3">Amazing work. Best technicians in city, very satisfied with the work.</p>
+        </div>
+        <div class="carousel-item text-center">
+          <div class="carousel-testimonial-img p-1 border rounded-circle m-auto">
+            <img class="d-block w-100 rounded-circle" src="https://lh3.googleusercontent.com/a-/AD_cMMSutduIO9TdrwAuH5TnmYAYBH4KUssONNZJeYI7lw-BVfQ=w45-h45-p-rp-mo-br100">
+          </div>
+          <h5 class="mt-4 mb-0"><strong class="text-warning text-uppercase">Mohan</strong></h5>
+          <h6 class="text-black m-0"></h6>
+          <p class="m-0 pt-3">Installed a stainless chimney for my kichen last week. Everything went smoothly. 
+            Very responsive and professional from scheduling  to installation. Highly recommended.</p>
+        </div>
+        
+      </div>
+      <a class="carousel-control-prev" href="#carouselTestimonial" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselTestimonial" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      </div>
     </div>
+    
     <!-- client -->
     <div class="jumbotron jumbotron-fluid">
-        <div class="container">
+        <div class="container" id="clients">
             <div>
                 <h3 class="align-self-left">OUR CLIENTS</h3>
             </div>
@@ -321,6 +463,18 @@
         </div>
     </div>
 
+    <!-- map -->
+    <div class="container-xxl pt-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="container-xxl pt-5 px-0">
+          <div class="bg-dark">
+              <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14654.38375268922!2d75.02373964505345!3d23.330414763343526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3963fc20cece3ae5%3A0xd651c852dc9e2abc!2sIRASCO!5e0!3m2!1sen!2sin!4v1688243722208!5m2!1sen!2sin"
+              frameborder="0" style="width: 100%; height: 450px; border:0;" allowfullscreen="" aria-hidden="false"
+              tabindex="0"></iframe>
+          </div>
+      </div>
+  </div>
+
 	<!-- copyright -->
 	<div class="jumbotron jumbotron-fluid" id="copyright">
         <div class="container">
@@ -369,6 +523,12 @@
       }
       </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="javascript/irasco.js"></script>
+
+
     <script>
       AOS.init({
         duration: 1200,
