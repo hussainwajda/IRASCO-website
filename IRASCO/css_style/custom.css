@@ -141,7 +141,7 @@ button {
     color: black;
 }
 /********** products ***********/
-@media (max-width: 990px){
+@media (max-width: 991px){
    #dd img{
     width: 250px;
     height: 250px;
@@ -182,10 +182,14 @@ button {
     aspect-ratio: 3/2;
     object-fit: contain !important;
 }
-@media (max-width: 600px){
+@media (max-width: 768px){
 #clients img{
     aspect-ratio: 1/0.5;
     object-fit: contain !important;
+}
+#duct1{
+    padding-top: 10px;
+    padding-left: 20px;
 }
 }
 /********** contact **********/
@@ -246,14 +250,26 @@ button{
 } */
 
 /********** RWD **********/
-@media (max-width: 575px) {
-    #banner h1 {
-        font-size: 2rem;
-    }
+
+.del_extra_space{
+    overflow-x: hidden;
 }
 
-@media (max-width: 1200px) and (min-width: 500px){
-    #banner h1 {
-        color: #ffffff;
-    }
+/* CSS for the video modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
 }
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
